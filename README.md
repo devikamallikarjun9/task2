@@ -1,34 +1,43 @@
- Requirements
-Python 3.x
+eatures
+Reads data from a CSV file
 
-nltk library
+Performs basic analysis:
 
-Install NLTK using pip:
+Counts total rows
 
-bash
-Copy code
-pip install nltk
-📁 Files
-chatbot.py: Main Python script for the chatbot logic.
+Sums up values in the second column
 
-🧠 Features
-Recognizes simple greetings and questions.
+Generates a clean PDF report
 
-Uses pattern matching and reflections for responses.
-
-Friendly fallback response for unknown inputs.
-
-Easy to extend and modify.
-
-🧪 How to Run
-Save the code as chatbot.py.
-
-Open your terminal or command prompt.
-
-Run the chatbot with:
+📦 Requirements
+Install dependencies using pip:
 
 bash
 Copy code
-python chatbot.py
-Type a message to chat. Type bye or exit to end.
+pip install fpdf
+📁 Project Structure
+graphql
+Copy code
+├── sample_data.csv          # Input CSV file
+├── report.pdf               # Output PDF report (auto-generated)
+├── data_report.py           # Python script
+└── README.md                # Documentation (you’re reading it)
+🧪 How to Use
+Make sure your CSV file (e.g., sample_data.csv) has at least two columns. Example:
 
+c
+Copy code
+Name,Amount
+Product A,100
+Product B,200
+Product C,150
+Update the filename variable in the script if needed:
+
+python
+Copy code
+filename = 'sample_data.csv'
+Run the script:
+
+bash
+Copy code
+python data_report.py
